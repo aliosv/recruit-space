@@ -1,0 +1,20 @@
+block('header').content()(function() {
+    return [
+        { elem : 'logo' },
+        {
+            elem : 'contacts',
+            content : [
+                {
+                    block : 'link',
+                    url : 'mailto:info@recruit.space',
+                    content : 'info@recruit.space'
+                },
+                {
+                    block : 'link',
+                    url : 'tel:+79859682288',
+                    content : '+7 985 968-22-88'
+                }
+            ]
+        }
+    ];
+});

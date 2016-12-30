@@ -2,7 +2,7 @@
 !.enb/make.js
 !.githooks/**/*
 !common.blocks/**/*
-!common.bundles/index/index.bemjson.js
+!desktop.bundles/index/index.bemjson.js
 !i/*
 !.borschik
 !.bowerrc

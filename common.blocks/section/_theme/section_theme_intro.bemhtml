@@ -1,4 +1,27 @@
 block('section').mod('theme', 'intro')(
     js()(true),
-    attrs()({ id : 'intro-particles' })
+    attrs()({ id : 'intro-particles' }),
+    content()(function() {
+        return applyNext({
+            ctx : {
+                content : [
+                    { block : 'header' },
+                    {
+                        elem : 'header',
+                        tag : 'h1',
+                        content : '<b>HR решения</b> на основе машинного обучения'
+                    },
+                    {
+                        elem : 'contact',
+                        content : {
+                            block : 'button',
+                            mods : { theme : 'custom' },
+                            text : 'Связаться с нами'
+                        }
+                    },
+                    { block : 'features' }
+                ]
+            }
+        });
+    })
 );

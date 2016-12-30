@@ -1,9 +1,70 @@
 block('section').mod('theme', 'target')(
     content()(function() {
         return applyNext({
-            ctx : [
-                { elem : 'header', content : 'Кому это подходит' }
-            ]
+            ctx : {
+                content : [
+                    { elem : 'header', content : 'Кому это подходит' },
+                    {
+                        elem : 'targets',
+                        content : [
+                            {
+                                elem : 'target',
+                                content : [
+                                    {
+                                        elem : 'target-info',
+                                        content : 'Мы помогаем\nкрупному бизнесу'
+                                    },
+                                    {
+                                        block : 'target',
+                                        mods : { company : true },
+                                        content : 'Компании и корпорации'
+                                    },
+                                    {
+                                        block : 'target',
+                                        mods : { finance : true },
+                                        content : 'Банки и финансы'
+                                    },
+                                    {
+                                        block : 'target',
+                                        mods : { state : true },
+                                        content : 'Госсектор'
+                                    }
+                                ]
+                            },
+                            {
+                                elem : 'target',
+                                content : [
+                                    {
+                                        elem : 'target-info',
+                                        content : 'Разрабатываем персональные\nрешения под задачи компаний'
+                                    },
+                                    {
+                                        block : 'target',
+                                        mods : { retail : true },
+                                        content : 'Ритейл'
+                                    },
+                                    {
+                                        block : 'target',
+                                        mods : { it : true },
+                                        content : 'IT-компании'
+                                    },
+                                    {
+                                        block : 'target',
+                                        mods : { tc : true },
+                                        content : 'Телекомуникации'
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        elem : 'info',
+                        content : 'Умение работать с данными, выделять самое существенное, находить правильные точки ' +
+                        'приложения инструментов анализа данных станут ключевыми конкурентными преимуществами ' +
+                        'компаний будущего.'
+                    }
+                ]
+            }
         });
     })
 );

@@ -1,0 +1,24 @@
+block('features').content()(function() {
+    return [
+        {
+            elem : 'item',
+            elemMods : { prediction : true },
+            content : 'Предсказательная аналитика\nдля найма персонала'
+        },
+        {
+            elem : 'item',
+            elemMods : { estimate : true },
+            content : 'Многофакторная оценка\nкачеств сотрудников'
+        },
+        {
+            elem : 'item',
+            elemMods : { modeling : true },
+            content : 'Построение моделей наиболее\nэффективных команд'
+        },
+        {
+            elem : 'item',
+            elemMods : { 'big-data' : true },
+            content : 'Использование больших данных\nдля всесторонней оценки\nкандидатов'
+        }
+    ];
+});

@@ -1,6 +1,9 @@
 {
     "freeze_paths" : {
         "**/*.png": ":base64:",
-        "**/*.svg": ":base64:"
+        "**/*.svg": ":base64:",
+        "**/*.otf": ":base64:",
+        "**/*.woff": ":base64:",
+        "**/*.woff2": ":base64:"
     }
 }

@@ -1,0 +1,44 @@
+.features
+{
+    font-size: 14px;
+    line-height: 20px;
+
+    display: flex;
+
+    color: #fff;
+
+    justify-content: space-between;
+}
+
+.features__item
+{
+    font-weight: 300;
+
+    padding: 73px 0 0;
+
+    text-align: center;
+    white-space: pre-wrap;
+
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+}
+
+.features__item_prediction
+{
+    background-image: url(prediction.png);
+}
+
+.features__item_estimate
+{
+    background-image: url(estimate.png);
+}
+
+.features__item_modeling
+{
+    background-image: url(modeling.png);
+}
+
+.features__item_big-data
+{
+    background-image: url(big-data.png);
+}

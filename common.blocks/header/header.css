@@ -1,0 +1,37 @@
+.header
+{
+    display: flex;
+
+    justify-content: space-between;
+}
+
+.header__logo
+{
+    width: 76px;
+    height: 65px;
+
+    background: url(logo.png) 0 0 no-repeat;
+}
+
+.header__contacts
+{
+    font-size: 14px;
+    font-weight: bold;
+    line-height: normal;
+
+    padding: 10px 0 0;
+}
+
+.header .link
+{
+    margin-left: 38px;
+
+    text-decoration: none;
+
+    color: #fff;
+}
+
+.header .link:hover
+{
+    text-decoration: underline;
+}

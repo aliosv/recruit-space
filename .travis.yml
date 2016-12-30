@@ -9,13 +9,14 @@ install:
 after_success: |
   if [ -n "$GITHUB_API_KEY" ]; then
     cd "$TRAVIS_BUILD_DIR"
-    cd common.bundles/index
+    cd desktop.bundles/index
     git clone --single-branch -b gh-pages https://github.com/aliosv/recruit-space.git
     cp _index.js recruit-space
     cp _index.css recruit-space
     cp index.html recruit-space
-    cp -r i/ recruit-space
+    cp -r ../../i/ recruit-space
     cd recruit-space
+    git add i -f
     git add --all
     git -c user.name='travis' -c user.email='travis' commit -m $TRAVIS_COMMIT
     # Make sure to make the output quiet, or else the API token will leak!

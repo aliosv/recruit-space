@@ -17,8 +17,8 @@ block('contacts').content()(function() {
             content : [
                 {
                     block : 'link',
-                    url : 'tel:+79998887766',
-                    content : '+7 999 888-77-66'
+                    url : 'tel:+79859682288',
+                    content : '+7 985 968-22-88'
                 }
             ]
         },
@@ -26,7 +26,7 @@ block('contacts').content()(function() {
             elem : 'item',
             elemMods : { type : 'address' },
             content : [
-                '112545, Россия, Москва\nул. Московская'
+                'Россия, Москва, 1-й Магистральный тупик, 5А'
             ]
         }
     ];

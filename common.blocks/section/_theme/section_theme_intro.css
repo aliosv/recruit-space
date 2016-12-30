@@ -2,9 +2,15 @@
 {
     position: relative;
 
-    height: 739px;
+    background: #112333 url(section_theme_intro.png) 0 0 repeat;
+}
 
-    background: #112333;
+.section_theme_intro .section__inner
+{
+    position: relative;
+    z-index: 2;
+
+    padding-top: 30px;
 }
 
 .section_theme_intro canvas
@@ -12,4 +18,30 @@
     position: absolute;
     top: 0;
     left: 0;
+}
+
+.section_theme_intro .header
+{
+    margin-bottom: 160px;
+}
+
+.section_theme_intro .section__header
+{
+    font-size: 38px;
+    font-weight: normal;
+    line-height: 60px;
+
+    text-align: center;
+
+    color: #fff;
+}
+
+.section_theme_intro .section__contact
+{
+    text-align: center;
+}
+
+.section_theme_intro .features
+{
+    margin-top: 90px;
 }

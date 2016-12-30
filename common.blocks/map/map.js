@@ -174,7 +174,7 @@ modules.define('map', ['i-bem__dom', 'google-map'], function(provide, BEMDOM, gm
                         }),
                         marker = new gmap.Marker({
                             icon : {
-                                url : '../../i/marker.png',
+                                url : 'i/marker.png',
                                 size : new gmap.Size(128, 139),
                                 anchor : new gmap.Point(64, 101)
                             },
@@ -185,7 +185,7 @@ modules.define('map', ['i-bem__dom', 'google-map'], function(provide, BEMDOM, gm
                             map : map
                         }),
                         infoWindow = new gmap.InfoWindow({
-                            content : 'Recruit Space',
+                            content : 'Recruit Space<br><br>Россия, Москва, 1-й Магистральный тупик, 5А',
                             pixelOffset : new gmap.Size(0, 101)
                         });
 
