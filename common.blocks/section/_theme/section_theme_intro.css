@@ -1,0 +1,15 @@
+.section_theme_intro
+{
+    position: relative;
+
+    height: 739px;
+
+    background: #112333;
+}
+
+.section_theme_intro canvas
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+}

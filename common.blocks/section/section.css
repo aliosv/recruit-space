@@ -1,0 +1,16 @@
+.section__width
+{
+    height: 100%;
+}
+
+.section__inner
+{
+    padding: 60px 100px;
+}
+
+.section__header
+{
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 24px;
+}

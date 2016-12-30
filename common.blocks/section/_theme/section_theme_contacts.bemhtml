@@ -1,0 +1,14 @@
+block('section').mod('theme', 'contacts')(
+    js()(true),
+    content()(function() {
+        return applyNext({
+            ctx : {
+                content : [
+                    { block : 'map' },
+                    { elem : 'header', content : 'Контакты' },
+                    { block : 'contacts' }
+                ]
+            }
+        });
+    })
+);

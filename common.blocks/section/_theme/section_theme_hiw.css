@@ -1,0 +1,24 @@
+.section_theme_hiw
+{
+    background: #112130;
+}
+
+.section_theme_hiw .section__inner
+{
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.section_theme_hiw .section__header
+{
+    margin-left: 100px;
+
+    color: #fff;
+}
+
+.section_theme_hiw .hiw
+{
+    margin-top: 56px;
+
+    color: #fff;
+}

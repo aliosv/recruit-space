@@ -1,0 +1,4 @@
+block('section').mod('theme', 'intro')(
+    js()(true),
+    attrs()({ id : 'intro-particles' })
+);

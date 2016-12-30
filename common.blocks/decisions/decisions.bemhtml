@@ -1,0 +1,35 @@
+block('decisions').content()(function() {
+    return [
+        {
+            elem : 'item',
+            elemMods : { candidates : true },
+            content : '<b>Определяем лучших</b> кандидатов при массовом найме'
+        },
+        {
+            elem : 'item',
+            elemMods : { leave : true },
+            content : 'Выявляем сотрудников, которые с большой вероятностью покинут компанию в ближайшем будущем'
+        },
+        {
+            elem : 'item',
+            elemMods : { best : true },
+            content : '<b>Выделяем</b> наиболее и наименее\n<b>эффективных</b> сотрудников'
+        },
+        {
+            elem : 'item',
+            elemMods : { errors : true },
+            content : '<b>Минимизируем человеческие ошибки</b>, которые неизбежно возникают в процессе найма'
+        },
+        {
+            elem : 'item',
+            elemMods : { analyze : true },
+            content : '<b>Анализируем</b>\nпроизводительность труда'
+        },
+        {
+            elem : 'item',
+            elemMods : { cost : true },
+            content : '<b>Уменьшаем расходы</b> компании на управление персоналом, автоматизируя процесс оценки и' +
+            ' сокращая издержки на найм сотрудников'
+        }
+    ];
+});

@@ -1,0 +1,9 @@
+block('section').mod('theme', 'target')(
+    content()(function() {
+        return applyNext({
+            ctx : [
+                { elem : 'header', content : 'Кому это подходит' }
+            ]
+        });
+    })
+);

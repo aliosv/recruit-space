@@ -1,0 +1,33 @@
+block('contacts').content()(function() {
+    return [
+        {
+            elem : 'item',
+            elemMods : { type : 'email' },
+            content : [
+                {
+                    block : 'link',
+                    url : 'mailto:info@recruit.space',
+                    content : 'info@recruit.space'
+                }
+            ]
+        },
+        {
+            elem : 'item',
+            elemMods : { type : 'phone' },
+            content : [
+                {
+                    block : 'link',
+                    url : 'tel:+79998887766',
+                    content : '+7 999 888-77-66'
+                }
+            ]
+        },
+        {
+            elem : 'item',
+            elemMods : { type : 'address' },
+            content : [
+                '112545, Россия, Москва\nул. Московская'
+            ]
+        }
+    ];
+});

@@ -1,0 +1,6 @@
+({
+    shouldDeps : [
+        'contacts',
+        'map'
+    ]
+})

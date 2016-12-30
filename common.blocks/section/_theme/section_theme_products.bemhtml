@@ -1,0 +1,12 @@
+block('section').mod('theme', 'products')(
+    content()(function() {
+        return applyNext({
+            ctx : {
+                content : [
+                    { elem : 'header', content : 'Решения' },
+                    { block : 'decisions' }
+                ]
+            }
+        });
+    })
+);

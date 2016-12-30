@@ -1,0 +1,69 @@
+.decisions
+{
+    font-size: 17px;
+    line-height: 28px;
+
+    display: flex;
+
+    margin: 0 0 -6px;
+
+    color: #4a4f57;
+
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.decisions__item
+{
+    box-sizing: border-box;
+    width: 48%;
+    min-height: 112px;
+    margin: 0 0 6px;
+    padding: 31px 0 20px 119px;
+
+    white-space: pre-wrap;
+
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.decisions__item:nth-child(odd)
+{
+    max-width: 420px;
+}
+
+.decisions__item:nth-child(even)
+{
+    max-width: 550px;
+    margin-left: 2%;
+}
+
+.decisions__item_analyze
+{
+    background-image: url(analyze.png);
+}
+
+.decisions__item_best
+{
+    background-image: url(best.png);
+}
+
+.decisions__item_candidates
+{
+    background-image: url(candidates.png);
+}
+
+.decisions__item_cost
+{
+    background-image: url(cost.png);
+}
+
+.decisions__item_errors
+{
+    background-image: url(errors.png);
+}
+
+.decisions__item_leave
+{
+    background-image: url(leave.png);
+}

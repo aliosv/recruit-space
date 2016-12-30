@@ -1,0 +1,12 @@
+block('section').mod('theme', 'hiw')(
+    content()(function() {
+        return applyNext({
+            ctx : {
+                content : [
+                    { elem : 'header', content : 'Принцип работы' },
+                    { block : 'hiw' }
+                ]
+            }
+        });
+    })
+);

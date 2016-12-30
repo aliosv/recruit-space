@@ -1,0 +1,57 @@
+.contacts
+{
+    font-size: 14px;
+    line-height: 22px;
+
+    width: 390px;
+    padding: 14px 0;
+
+    color: #4a4f57;
+    background: #fff;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.contacts .link
+{
+    font-size: 18px;
+    line-height: 36px;
+
+    text-decoration: none;
+
+    color: inherit;
+}
+
+.contacts .link:hover
+{
+    text-decoration: underline;
+}
+
+.contacts__item
+{
+    padding: 11px 30px 10px 82px;
+
+    white-space: pre-wrap;
+
+    background-repeat: no-repeat;
+    background-position: 30px 19px;
+}
+
+.contacts__item + .contacts__item
+{
+    border-top: 1px solid #f8f8f8;
+}
+
+.contacts__item_type_address
+{
+    background-image: url('__icon/_type/contacts__icon_type_address.png');
+}
+
+.contacts__item_type_email
+{
+    background-image: url('__icon/_type/contacts__icon_type_email.png');
+}
+
+.contacts__item_type_phone
+{
+    background-image: url('__icon/_type/contacts__icon_type_phone.png');
+}

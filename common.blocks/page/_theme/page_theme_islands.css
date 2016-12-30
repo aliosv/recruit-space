@@ -1,0 +1,10 @@
+.page
+{
+    min-width: 1000px;
+}
+
+.page__width
+{
+    min-width: 1000px;
+    max-width: 1366px;
+}
