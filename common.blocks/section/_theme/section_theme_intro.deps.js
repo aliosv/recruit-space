@@ -1,8 +1,8 @@
 ({
     shouldDeps : [
-        'button',
         'header',
         'features',
-        'particles-js'
+        'particles-js',
+        { block : 'button', mods : { theme : 'custom' } },
     ]
 })
