@@ -1,9 +1,29 @@
 /** @class section */
-modules.define('section', ['particles'], function(provide, particles, block) {
+modules.define('section', [
+    'i-bem__dom', 'BEMHTML', 'jquery', 'particles'
+], function(provide, BEMDOM, BEMHTML, $, particles, block) {
     provide(block.decl({ modName : 'theme', modVal : 'intro' }, /** @lends section.prototype */{
         onSetMod : {
             js : {
                 inited : function() {
+                    var btn = this.findBlockInside('button'),
+                        modal;
+
+                    btn.on('click', function() {
+                        if(!modal) {
+                            modal = $(BEMHTML.apply({
+                                block : 'modal',
+                                mods : {
+                                    autoclosable : true,
+                                    feedback : true,
+                                    theme : 'islands'
+                                }
+                            })).bem('modal');
+                        }
+
+                        modal.setMod('visible', true);
+                    });
+
                     particles('intro-particles', {
                         particles : {
                             number : {
