@@ -1,6 +1,7 @@
 .section_theme_target
 {
     background: #13293d url(section_theme_target.jpg) 0 50% no-repeat;
+    background-size: cover;
 }
 
 .section_theme_target .section__header
