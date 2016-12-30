@@ -1,0 +1,7 @@
+block('modal').mod('feedback', true).content()(function() {
+    return applyNext({
+        ctx : {
+            content : { block : 'feedback' }
+        }
+    });
+});
