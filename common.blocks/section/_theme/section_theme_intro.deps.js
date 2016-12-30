@@ -3,6 +3,6 @@
         'header',
         'features',
         'particles-js',
-        { block : 'button', mods : { theme : 'custom' } },
+        { block : 'button', mods : { theme : 'custom' } }
     ]
 })
