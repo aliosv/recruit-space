@@ -5,12 +5,25 @@
     background: #112333 url(section_theme_intro.png) 0 0 repeat;
 }
 
+.section_theme_intro .section__width
+{
+    margin: auto;
+}
+
 .section_theme_intro .section__inner
 {
     position: relative;
     z-index: 2;
 
+    display: flex;
+    flex-direction: column;
+
+    box-sizing: border-box;
+    height: 100%;
     padding-top: 30px;
+    padding-bottom: 150px;
+
+    justify-content: space-between;
 }
 
 .section_theme_intro canvas
