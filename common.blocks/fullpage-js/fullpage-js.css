@@ -1,0 +1,54 @@
+#fp-nav
+{
+    position: absolute;
+    top: 50%;
+    left: 30px;
+}
+
+#fp-nav ul,
+#fp-nav li
+{
+    display: block;
+
+    margin: 0;
+    padding: 0;
+}
+
+#fp-nav li + li
+{
+    margin-top: 8px;
+}
+
+#fp-nav a
+{
+    display: block;
+
+    width: 12px;
+    height: 12px;
+
+    border-radius: 50%;
+}
+
+#fp-nav.dark a
+{
+    opacity: 0.25;
+    background: #fff;
+}
+
+#fp-nav.dark a.active
+{
+    opacity: 1;
+    box-shadow: 0 0 15px #fff;
+}
+
+#fp-nav.light a
+{
+    opacity: 0.25;
+    background: #5bc0c7;
+}
+
+#fp-nav.light a.active
+{
+    opacity: 1;
+    box-shadow: 0 0 15px #5bc0c7;
+}

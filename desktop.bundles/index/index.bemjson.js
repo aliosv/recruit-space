@@ -8,7 +8,10 @@
     ],
     scripts : [{ elem : 'js', url : '_index.js' }],
     mods : { theme : 'islands' },
-    content : ['intro', 'target', 'products', 'hiw', 'contacts'].map(function(value) {
-        return { block : 'section', mods : { theme : value } };
-    })
+    content : {
+        block : 'sections',
+        content : ['intro', 'target', 'products', 'hiw', 'contacts'].map(function(value) {
+            return { block : 'section', mods : { theme : value } };
+        })
+    }
 });
