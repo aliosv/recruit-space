@@ -1,0 +1,52 @@
+block('feedback')(
+    js()(true),
+    content()(function() {
+        return {
+            elem : 'form',
+            tag : 'form',
+            content : [
+                {
+                    elem : 'header',
+                    content : 'Связаться с нами'
+                },
+                {
+                    elem : 'control',
+                    content : {
+                        block : 'input',
+                        mods : { size : 'xl', theme : 'islands', width : 'available' },
+                        placeholder : 'Ваше имя',
+                        attrs : { required : true },
+                        name : 'name'
+                    }
+                },
+                {
+                    elem : 'control',
+                    content : {
+                        block : 'input',
+                        mods : { size : 'xl', theme : 'islands', width : 'available' },
+                        placeholder : 'Телефон',
+                        attrs : { required : true, type : 'tel' },
+                        name : 'phone'
+                    }
+                },
+                {
+                    elem : 'control',
+                    content : {
+                        block : 'textarea',
+                        mods : { size : 'xl', theme : 'islands', width : 'available' },
+                        placeholder : 'Комментарий',
+                        name : 'message'
+                    }
+                },
+                {
+                    elem : 'controls',
+                    content : {
+                        block : 'button',
+                        mods : { size : 'xl', theme : 'islands', type : 'submit', view : 'action' },
+                        text : 'Отправить'
+                    }
+                }
+            ]
+        };
+    })
+);

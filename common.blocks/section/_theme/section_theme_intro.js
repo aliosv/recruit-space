@@ -19,6 +19,8 @@ modules.define('section', [
                                     theme : 'islands'
                                 }
                             })).bem('modal');
+
+                            BEMDOM.append(BEMDOM.scope, modal.domElem);
                         }
 
                         modal.setMod('visible', true);

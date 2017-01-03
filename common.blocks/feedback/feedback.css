@@ -1,0 +1,24 @@
+.feedback__header
+{
+    font-size: 30px;
+    line-height: normal;
+
+    margin: 0 0 25px;
+}
+
+.feedback__control + .feedback__control
+{
+    margin-top: 15px;
+}
+
+.feedback__control .textarea
+{
+    height: 300px;
+}
+
+.feedback__controls
+{
+    margin: 15px 0 0;
+
+    text-align: right;
+}
