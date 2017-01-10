@@ -1,0 +1,4 @@
+.input_theme_islands.input_focused
+{
+    box-shadow: 0 0 0 1px #192b3b, inset 0 0 0 1px #192b3b;
+}

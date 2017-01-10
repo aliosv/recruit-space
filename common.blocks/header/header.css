@@ -7,15 +7,16 @@
 
 .header__logo
 {
-    width: 76px;
-    height: 65px;
+    width: 100px;
+    height: 85px;
 
-    background: url(logo.png) 0 0 no-repeat;
+    background: url(logo.png) 50% 50% no-repeat;
+    background-size: auto 100%;
 }
 
 .header__contacts
 {
-    font-size: 14px;
+    font-size: 18px;
     font-weight: bold;
     line-height: normal;
 

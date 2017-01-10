@@ -3,6 +3,7 @@
   "devDependencies": {
     "borschik-tech-cleancss": "~2.0.1",
     "bower": "~1.7.7",
+    "cross-env": "^3.1.4",
     "csscomb": "~2.0.4",
     "enb": "0.13.15",
     "enb-autoprefixer": "0.2.2",
@@ -21,6 +22,7 @@
   "private": true,
   "scripts": {
     "postinstall": "bower install",
-    "lint": "jshint-groups && jscs . && csscomb -vl ."
+    "lint": "jshint-groups && jscs . && csscomb -vl .",
+    "build": "cross-env BORSCHIK_FREEZABLE_EXTS=\"jpg jpeg gif ico png svg ttf eot woff css js\" enb make -n"
   }
 }

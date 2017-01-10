@@ -7,7 +7,7 @@
     },
     {
         shouldDeps : [
-            { block : 'button', mods : { theme : 'islands' } },
+            { block : 'button', mods : { theme : 'custom' } },
             { block : 'input', mods : { theme : 'islands' } },
             { block : 'textarea', mods : { theme : 'islands' } }
         ]

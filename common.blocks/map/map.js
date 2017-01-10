@@ -1,3 +1,5 @@
+/* globals borschik */
+
 /** @class map */
 modules.define('map', ['i-bem__dom', 'google-map'], function(provide, BEMDOM, gmap) {
     provide(BEMDOM.decl(this.name, /** @lends map.prototype */{
@@ -11,6 +13,10 @@ modules.define('map', ['i-bem__dom', 'google-map'], function(provide, BEMDOM, gm
                                 lng : 37.531954
                             },
                             disableDefaultUI : true,
+                            disableDoubleClickZoom : true,
+                            scrollwheel : false,
+                            zoomControl : true,
+                            zoomControlOptions : { position : gmap.ControlPosition.RIGHT_CENTER },
                             styles : [
                                 {
                                     elementType : 'geometry',
@@ -174,7 +180,7 @@ modules.define('map', ['i-bem__dom', 'google-map'], function(provide, BEMDOM, gm
                         }),
                         marker = new gmap.Marker({
                             icon : {
-                                url : 'i/marker.png',
+                                url : borschik.link('../../i/marker.png'),
                                 size : new gmap.Size(128, 139),
                                 anchor : new gmap.Point(64, 101)
                             },

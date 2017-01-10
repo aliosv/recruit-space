@@ -4,7 +4,7 @@ block('page').elem('favicon').def()(function() {
             block : 'page',
             elem : 'link',
             attrs : {
-                href : 'i/favicon_114x114.png',
+                href : '../../i/favicon_114x114.png',
                 rel : 'icon',
                 sizes : '114x114',
                 type : 'image/png'
@@ -14,7 +14,7 @@ block('page').elem('favicon').def()(function() {
             block : 'page',
             elem : 'link',
             attrs : {
-                href : 'i/favicon_72x72.png',
+                href : '../../i/favicon_72x72.png',
                 rel : 'icon',
                 sizes : '72x72',
                 type : 'image/png'
@@ -24,7 +24,7 @@ block('page').elem('favicon').def()(function() {
             block : 'page',
             elem : 'link',
             attrs : {
-                href : 'i/favicon_57x57.png',
+                href : '../../i/favicon_57x57.png',
                 rel : 'icon',
                 sizes : '57x57',
                 type : 'image/png'
@@ -34,7 +34,7 @@ block('page').elem('favicon').def()(function() {
             block : 'page',
             elem : 'link',
             attrs : {
-                href : 'i/favicon_16x16.png',
+                href : '../../i/favicon_16x16.png',
                 rel : 'icon',
                 sizes : '16x16',
                 type : 'image/png'

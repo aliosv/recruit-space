@@ -1,11 +1,16 @@
 {
+    "paths" : {
+        "./desktop.bundles/static/": "static/"
+    },
     "freeze_paths" : {
-        "**/*.jpeg": ":base64:",
-        "**/*.jpg": ":base64:",
-        "**/*.png": ":base64:",
-        "**/*.svg": ":base64:",
-        "**/*.otf": ":base64:",
-        "**/*.woff": ":base64:",
-        "**/*.woff2": ":base64:"
+        "**/*.jpg": "desktop.bundles/static/i",
+        "**/*.jpeg": "desktop.bundles/static/i",
+        "**/*.gif": "desktop.bundles/static/i",
+        "**/*.png": "desktop.bundles/static/i",
+        "**/*.svg": "desktop.bundles/static/i",
+        "**/*.eot": "desktop.bundles/static/fonts",
+        "**/*.ttf": "desktop.bundles/static/fonts",
+        "**/*.woff": "desktop.bundles/static/fonts",
+        "**/": "desktop.bundles/static"
     }
 }

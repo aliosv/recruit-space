@@ -42,7 +42,7 @@ block('feedback')(
                     elem : 'controls',
                     content : {
                         block : 'button',
-                        mods : { size : 'xl', theme : 'islands', type : 'submit', view : 'action' },
+                        mods : { theme : 'custom', type : 'submit' },
                         text : 'Отправить'
                     }
                 }

@@ -152,7 +152,7 @@ function configureJs(nodeConfig, params) {
         ]).concat(addYm ? [[ym, { source : '?.js', target : '?.ym.js' }]] : []));
 
     nodeConfig.mode('development', function(nodeConfig) {
-        nodeConfig.addTechs([[borschik, { source : addYm ? '?.ym.js' : '?.js', target : '_?.js', minify : false }]]);
+        nodeConfig.addTechs([[borschik, { source : addYm ? '?.ym.js' : '?.js', target : '_?.js', minify : false, freeze : true }]]);
     });
 
     nodeConfig.mode('production', function(nodeConfig) {
@@ -169,7 +169,8 @@ function configureJs(nodeConfig, params) {
  */
 function configureHtml(nodeConfig) {
     nodeConfig.addTechs([
-        [html]
+        [html, { destTarget : '_?.html' }],
+        [borschik, { source : '_?.html', target : '?.html', freeze : true, tech : 'html' }]
     ]);
 
     nodeConfig.addTargets(['?.html']);
