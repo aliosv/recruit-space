@@ -1,7 +1,5 @@
 **/*
 !.gitignore
 !.nojekyll
-!_index.css
-!_index.js
+!static/**/*
 !index.html
-!i/*
