@@ -170,7 +170,22 @@ function configureJs(nodeConfig, params) {
 function configureHtml(nodeConfig) {
     nodeConfig.addTechs([
         [html, { destTarget : '_?.html' }],
-        [borschik, { source : '_?.html', target : '?.html', freeze : true, tech : 'html' }]
+        // прежде чем фризить html нужно собрать статику, поэтому создаем обертку вокруг
+        // технологии борщика, добавляем зависимость от таргетов статики
+        [require('enb-borschik/node_modules/inherit')(borschik, {
+            build : function() {
+                var _this = this,
+                    _base = this.__base,
+                    args = arguments,
+                    depsTargets = ['_?.js', '_?.css'].map(function(target) {
+                        return this.node.unmaskTargetName(target);
+                    }, this);
+
+                return this.node.requireSources(depsTargets).then(function() {
+                    return _base.apply(_this, args);
+                });
+            }
+        }), { source : '_?.html', target : '?.html', freeze : true, tech : 'html' }]
     ]);
 
     nodeConfig.addTargets(['?.html']);
