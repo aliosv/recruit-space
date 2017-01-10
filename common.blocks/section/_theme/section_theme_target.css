@@ -15,10 +15,11 @@
 {
     display: flex;
 
-    width: 650px;
+    max-width: 1000px;
 
     color: #fff;
 
+    align-items: flex-end;
     justify-content: space-between;
 }
 

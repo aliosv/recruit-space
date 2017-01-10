@@ -6,7 +6,8 @@ block('section').mod('theme', 'contacts')(
                 content : [
                     { block : 'map' },
                     { elem : 'header', content : 'Контакты' },
-                    { block : 'contacts' }
+                    { block : 'contacts' },
+                    { block : 'sections', elem : 'up' }
                 ]
             }
         });

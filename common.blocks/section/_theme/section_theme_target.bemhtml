@@ -23,11 +23,6 @@ block('section').mod('theme', 'target')(
                                         block : 'target',
                                         mods : { finance : true },
                                         content : 'Банки и финансы'
-                                    },
-                                    {
-                                        block : 'target',
-                                        mods : { state : true },
-                                        content : 'Госсектор'
                                     }
                                 ]
                             },
@@ -40,8 +35,22 @@ block('section').mod('theme', 'target')(
                                     },
                                     {
                                         block : 'target',
+                                        mods : { state : true },
+                                        content : 'Госсектор'
+                                    },
+                                    {
+                                        block : 'target',
                                         mods : { retail : true },
                                         content : 'Ритейл'
+                                    }
+                                ]
+                            },
+                            {
+                                elem : 'target',
+                                content : [
+                                    {
+                                        elem : 'target-info',
+                                        content : 'Извлекаем из данных пользу'
                                     },
                                     {
                                         block : 'target',

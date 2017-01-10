@@ -34,6 +34,10 @@ modules.define('sections', ['i-bem__dom', 'fullpage-js'], function(provide, BEMD
                     this.bindTo('next', 'click', function() {
                         $.fn.fullpage.moveSectionDown();
                     });
+
+                    this.bindTo('up', 'click', function() {
+                        $.fn.fullpage.moveTo(1);
+                    });
                 }
             }
         }

@@ -30,6 +30,28 @@
     background-image: url(sections__next_light.png);
 }
 
+.sections__up
+{
+    position: absolute !important;
+    bottom: 75px;
+    left: 100px;
+
+    width: 68px;
+    height: 68px;
+
+    cursor: pointer;
+    transition: background 0.3s linear;
+
+    border-radius: 50%;
+    background: #fff url(sections_up.png) 50% 50% no-repeat;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.sections__up:hover
+{
+    background-color: #ddd;
+}
+
 @keyframes sections__next
 {
     0%

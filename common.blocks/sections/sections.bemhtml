@@ -1,5 +1,6 @@
 block('sections')()(
     js()(true),
 
-    elem('next').attrs()({ title : 'Следующий слайд' })
+    elem('next').attrs()({ title : 'Следующий слайд' }),
+    elem('up').attrs()({ title : 'Вернуться на первый слайд' })
 );
