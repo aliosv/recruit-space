@@ -17,9 +17,9 @@ after_success: |
     rm -rf recruit-space/static/
     cp -r ../static/ recruit-space
     rm -rf recruit-space/*.css
-    mv recruit-space/static/*.css recruit-space
+    mv recruit-space/static/css/*.css recruit-space
     rm -rf recruit-space/*.js
-    mv recruit-space/static/*.js recruit-space
+    mv recruit-space/static/js/*.js recruit-space
 
     cd recruit-space
     git add static -f
