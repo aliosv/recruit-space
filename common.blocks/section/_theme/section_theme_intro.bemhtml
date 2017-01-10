@@ -19,7 +19,8 @@ block('section').mod('theme', 'intro')(
                             text : 'Связаться с нами'
                         }
                     },
-                    { block : 'features' }
+                    { block : 'features' },
+                    { block : 'sections', elem : 'next', elemMods : { light : true } }
                 ]
             }
         });

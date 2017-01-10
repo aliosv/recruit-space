@@ -30,6 +30,10 @@ modules.define('sections', ['i-bem__dom', 'fullpage-js'], function(provide, BEMD
                                 .addClass(themes[nextIndex]);
                         }
                     });
+
+                    this.bindTo('next', 'click', function() {
+                        $.fn.fullpage.moveSectionDown();
+                    });
                 }
             }
         }

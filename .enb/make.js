@@ -95,8 +95,7 @@ function configureCss(nodeConfig) {
 
     nodeConfig.mode('development', function(nodeConfig) {
         nodeConfig.addTechs([
-            // борщик нужен для фриза картинок и шрифтов, раскрытия инклудов
-            [borschik, { source : '?.css', target : '_?.css', freeze : true, minify : false }]
+            [borschik, { source : '?.css', target : '_?.css', minify : false }]
         ]);
     });
 
@@ -152,7 +151,7 @@ function configureJs(nodeConfig, params) {
         ]).concat(addYm ? [[ym, { source : '?.js', target : '?.ym.js' }]] : []));
 
     nodeConfig.mode('development', function(nodeConfig) {
-        nodeConfig.addTechs([[borschik, { source : addYm ? '?.ym.js' : '?.js', target : '_?.js', minify : false, freeze : true }]]);
+        nodeConfig.addTechs([[borschik, { source : addYm ? '?.ym.js' : '?.js', target : '_?.js', minify : false }]]);
     });
 
     nodeConfig.mode('production', function(nodeConfig) {
@@ -168,25 +167,31 @@ function configureJs(nodeConfig, params) {
  * @returns {Array}
  */
 function configureHtml(nodeConfig) {
-    nodeConfig.addTechs([
-        [html, { destTarget : '_?.html' }],
-        // прежде чем фризить html нужно собрать статику, поэтому создаем обертку вокруг
-        // технологии борщика, добавляем зависимость от таргетов статики
-        [require('enb-borschik/node_modules/inherit')(borschik, {
-            build : function() {
-                var _this = this,
-                    _base = this.__base,
-                    args = arguments,
-                    depsTargets = ['_?.js', '_?.css'].map(function(target) {
-                        return this.node.unmaskTargetName(target);
-                    }, this);
+    nodeConfig.mode('development', function(nodeConfig) {
+        nodeConfig.addTechs([[html]]);
+    });
 
-                return this.node.requireSources(depsTargets).then(function() {
-                    return _base.apply(_this, args);
-                });
-            }
-        }), { source : '_?.html', target : '?.html', freeze : true, tech : 'html' }]
-    ]);
+    nodeConfig.mode('production', function(nodeConfig) {
+        nodeConfig.addTechs([
+            [html, { destTarget : '_?.html' }],
+            // прежде чем фризить html нужно собрать статику, поэтому создаем обертку вокруг
+            // технологии борщика, добавляем зависимость от таргетов статики
+            [require('enb-borschik/node_modules/inherit')(borschik, {
+                build : function() {
+                    var _this = this,
+                        _base = this.__base,
+                        args = arguments,
+                        depsTargets = ['_?.js', '_?.css'].map(function(target) {
+                            return this.node.unmaskTargetName(target);
+                        }, this);
+
+                    return this.node.requireSources(depsTargets).then(function() {
+                        return _base.apply(_this, args);
+                    });
+                }
+            }), { source : '_?.html', target : '?.html', freeze : true, tech : 'html' }]
+        ]);
+    });
 
     nodeConfig.addTargets(['?.html']);
 }

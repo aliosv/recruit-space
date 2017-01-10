@@ -2,3 +2,50 @@
 {
     position: relative;
 }
+
+.sections__next
+{
+    position: absolute;
+    right: 0;
+    bottom: 45px;
+    left: 0;
+
+    width: 150px;
+    height: 100px;
+    margin: auto;
+
+    cursor: pointer;
+
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+.sections__next:hover
+{
+    animation: sections__next 1.5s infinite linear;
+}
+
+.sections__next_light
+{
+    background-image: url(sections__next_light.png);
+}
+
+@keyframes sections__next
+{
+    0%
+    {
+        background-position: 50% 50%;
+    }
+    25%
+    {
+        background-position: 50% 70%;
+    }
+    75%
+    {
+        background-position: 50% 30%;
+    }
+    100%
+    {
+        background-position: 50% 50%;
+    }
+}

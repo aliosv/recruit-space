@@ -1,1 +1,5 @@
-block('sections').js()(true);
+block('sections')()(
+    js()(true),
+
+    elem('next').attrs()({ title : 'Следующий слайд' })
+);
