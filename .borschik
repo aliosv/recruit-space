@@ -1,6 +1,8 @@
 {
     "paths" : {
-        "./desktop.bundles/static/": "static/"
+        "./desktop.bundles/static/": "static/",
+        "./desktop.bundles/static/css/": "./",
+        "./desktop.bundles/static/js/": "./"
     },
     "freeze_paths" : {
         "**/*.jpg": "desktop.bundles/static/i",
@@ -11,6 +13,8 @@
         "**/*.eot": "desktop.bundles/static/fonts",
         "**/*.ttf": "desktop.bundles/static/fonts",
         "**/*.woff": "desktop.bundles/static/fonts",
+        "**/*.css": "desktop.bundles/static/css",
+        "**/*.js": "desktop.bundles/static/js",
         "**/": "desktop.bundles/static"
     }
 }
